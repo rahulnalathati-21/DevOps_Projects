@@ -3,7 +3,7 @@ name: Terraform S3 Deployment
 on:
   push:
     branches:
-      - hash
+      - cicd-s3tf
 
 jobs:
   terraform:
