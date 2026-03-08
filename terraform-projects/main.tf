@@ -7,6 +7,6 @@ resource "aws_s3_bucket" "buckets" {
   bucket = "rahul-devops-bucket-${count.index}"
 
   tags = {
-    Name = "DevOpsBucket-${count.index}"
+    Name = "CICD-Bucket-${count.index}"
   }
 }
