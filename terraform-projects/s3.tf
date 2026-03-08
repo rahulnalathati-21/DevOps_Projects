@@ -1,12 +1,5 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
-resource "aws_s3_bucket" "example" {
+resource "aws_s3_bucket" "bucket" {
   bucket = "cicd-s3-bucket-rahul-12345"
 
-  tags = {
-    Name = "CICD-S3-Bucket"
-    Environment = "Dev"
-  }
+  force_destroy = true
 }
