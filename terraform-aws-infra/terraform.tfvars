@@ -8,6 +8,6 @@ availability_zone = "us-east-1a"
 
 ami_id = "ami-053b0d53c279acc90"
 
-instance_type = "t2.micro"
+instance_type = "t3.micro"
 
 bucket_name = "terraform-state-bucket-rahul-12345"
