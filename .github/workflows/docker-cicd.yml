@@ -8,6 +8,10 @@ on:
 jobs:
   docker-build-run:
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: docker_cicd
 
     steps:
 
@@ -16,16 +20,18 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t myapp-image .
+        docker build -t docker_cicd_img .
 
     - name: Run Docker Container
       run: |
-        docker run -d -p 8080:8080 --name myapp-container myapp-image
+        docker run -d -p 8080:8080 --name docker_cicd_cont docker_cicd_img
+        
+    - name: Verify Application
+      run: |
+        sleep 5
+        curl -f http://localhost:8080
 
     - name: Check Running Containers
       run: |
         docker ps
 
-    - name: Stop Container
-      run: |
-        docker stop myapp-container
