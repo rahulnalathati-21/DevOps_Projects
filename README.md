@@ -1,5 +1,4 @@
 # DevOps Projects Repository 
-about me!
 
 Welcome to my DevOps Projects repository!
 
