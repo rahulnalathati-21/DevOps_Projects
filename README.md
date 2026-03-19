@@ -1,4 +1,4 @@
-# DevOps Projects Repository! -001
+# DevOps Projects Repository!
 
 Welcome to my DevOps Projects repository!
 
