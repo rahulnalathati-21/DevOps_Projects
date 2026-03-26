@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-state-bucket-rahul-12345"
+    bucket = "netfilx123-s3-bucket"
     key    = "terraform/state.tfstate"
     region = "us-east-1"
   }
